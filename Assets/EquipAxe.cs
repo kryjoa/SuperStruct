@@ -13,18 +13,18 @@ public class EquipAxe : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKey(KeyCode.F))
-        {
-            Drop();
-        }
+        //if (Input.GetKey(KeyCode.F))
+        //{
+        //    Drop();
+        //}
     }
-    void Drop()
-    {
-        AxeParent.DetachChildren();
-        Axe.transform.eulerAngles = new Vector3(Axe.transform.position.x);
-        Axe.GetComponent<Rigidbody>().isKinematic = false;
-        Axe.GetComponent<MeshCollider>().enabled = true;
-    }
+    //void Drop()
+    //{
+    //    AxeParent.DetachChildren();
+    //    Axe.transform.eulerAngles = new Vector3(Axe.transform.position.x);
+    //    Axe.GetComponent<Rigidbody>().isKinematic = false;
+    //    Axe.GetComponent<MeshCollider>().enabled = true;
+    //}
 
 
     void Equip()
