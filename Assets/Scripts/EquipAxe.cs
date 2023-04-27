@@ -5,29 +5,42 @@ using UnityEngine;
 public class EquipAxe : MonoBehaviour
 {
     public GameObject character_AxeOn;
-    public GameObject controllerOff;
-    //public GameObject Maincharacter;
-    //public Vector3 position;
+    public GameObject mainCharacter;
+    public GameObject Plane;
+    public GameObject Axe;
+    public Vector3 position;
+    public int counter;
 
     void Start()
     {
         character_AxeOn.SetActive(false);
     }
-    //void Update()
-    //{
-    //    character_AxeOn.position = transform.position;
-    //    transform.position = Maincharacter.position;
-    //}
+    void Update()
+    {
+        character_AxeOn.transform.position = mainCharacter.transform.position;
+        character_AxeOn.transform.rotation = mainCharacter.transform.rotation;
+
+    }
 
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.E) && counter%2 == 0)
             {
-                this.gameObject.SetActive(false);
-                controllerOff.SetActive(false);
+                Axe.SetActive(false);
+                mainCharacter.SetActive(false);
                 character_AxeOn.SetActive(true);
+                counter++;
+            }
+
+            if (Input.GetKey(KeyCode.F))
+            {
+                Axe.transform.position = character_AxeOn.transform.position;
+                Axe.SetActive(true);
+                mainCharacter.SetActive(true);
+                character_AxeOn.SetActive(false);
+
             }
         }
     }

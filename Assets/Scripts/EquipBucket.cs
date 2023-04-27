@@ -5,34 +5,42 @@ using UnityEngine;
 public class EquipBucket : MonoBehaviour
 {
     public GameObject character_BucketOn;
-    public GameObject controllerOff;
-    public GameObject character_Axe;
-    //public GameObject Maincharacter;
-    //public Vector3 position;
+    public GameObject mainCharacter;
+    public GameObject Plane;
+    public GameObject Bucket;
+    public Vector3 position;
+    public int counter;
 
     void Start()
     {
         character_BucketOn.SetActive(false);
     }
-    //void Update()
-    //{
-    //    character_AxeOn.position = transform.position;
-    //    transform.position = Maincharacter.position;
-    //}
+    void Update()
+    {
+        character_BucketOn.transform.position = mainCharacter.transform.position;
+        character_BucketOn.transform.rotation = mainCharacter.transform.rotation;
+
+    }
 
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            if(character_Axe.SetActive(true))
+            if (Input.GetKey(KeyCode.E) && counter % 2 == 0)
             {
-                character_BucketOn
-            }
-            if (Input.GetKey(KeyCode.E))
-            {
-                this.gameObject.SetActive(false);
-                controllerOff.SetActive(false);
+                Bucket.SetActive(false);
+                mainCharacter.SetActive(false);
                 character_BucketOn.SetActive(true);
+                counter++;
+            }
+
+            if (Input.GetKey(KeyCode.F))
+            {
+                Bucket.transform.position = character_BucketOn.transform.position;
+                Bucket.SetActive(true);
+                mainCharacter.SetActive(true);
+                character_BucketOn.SetActive(false);
+
             }
         }
     }

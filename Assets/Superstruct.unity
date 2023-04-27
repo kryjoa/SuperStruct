@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028353, g: 0.22571383, b: 0.30692253, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1634,7 +1634,7 @@ GameObject:
   - component: {fileID: 251108724}
   - component: {fileID: 251108723}
   m_Layer: 0
-  m_Name: vBasicController_character
+  m_Name: MainCharacter
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8455,7 +8455,7 @@ GameObject:
   - component: {fileID: 1350441528}
   - component: {fileID: 1350441527}
   m_Layer: 0
-  m_Name: character_Axe
+  m_Name: AxeCharacter
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14588,7 +14588,7 @@ GameObject:
   - component: {fileID: 6052946147030496371}
   - component: {fileID: 6866778731745259212}
   - component: {fileID: 6866778731745259211}
-  - component: {fileID: 6866778731745259210}
+  - component: {fileID: 6866778731745259213}
   m_Layer: 0
   m_Name: axe
   m_TagString: Untagged
@@ -14596,20 +14596,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &6866778731745259210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6866778731745259209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 513352705d7c93a469e4d9c0e0236152, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  character_AxeOn: {fileID: 1350441526}
-  controllerOff: {fileID: 251108722}
 --- !u!65 &6866778731745259211
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14637,6 +14623,24 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &6866778731745259213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6866778731745259209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 513352705d7c93a469e4d9c0e0236152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character_AxeOn: {fileID: 1350441526}
+  mainCharacter: {fileID: 251108722}
+  Plane: {fileID: 1372749477}
+  Axe: {fileID: 6866778731745259209}
+  position: {x: 0, y: 0, z: 0}
+  counter: 0
 --- !u!33 &6896110924789683348
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14736,7 +14740,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character_BucketOn: {fileID: 0}
-  controllerOff: {fileID: 251108722}
+  mainCharacter: {fileID: 0}
+  Plane: {fileID: 0}
+  Bucket: {fileID: 0}
+  position: {x: 0, y: 0, z: 0}
+  counter: 0
 --- !u!23 &8657025136028991957
 MeshRenderer:
   m_ObjectHideFlags: 0
