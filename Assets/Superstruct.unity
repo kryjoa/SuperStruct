@@ -21769,6 +21769,7 @@ GameObject:
   - component: {fileID: 1784020735920310869}
   - component: {fileID: 1784020735934152279}
   - component: {fileID: 1784020735934152280}
+  - component: {fileID: 1784020735934152281}
   m_Layer: 0
   m_Name: Pallet
   m_TagString: Untagged
@@ -21921,11 +21922,29 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784020735920070491}
   m_Material: {fileID: 13400000, guid: c03201ee5b6dae443bc19c65f2ed8d89, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1784020735934152281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784020735920070491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422f7ea5ebc081748b691e9501e51453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Palette: {fileID: 1784020735920070491}
+  Holz: {fileID: 4026084144852046743}
+  character_AxeOn: {fileID: 1350441526}
+  radius: 5
+  MainCharacter: {fileID: 251108722}
+  BucketCharacter: {fileID: 1477430808}
 --- !u!65 &2145109728539364604
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22110,8 +22129,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4026084144852046743}
   m_LocalRotation: {x: -0.50325733, y: 0.49672124, z: -0.50717115, w: 0.49272463}
-  m_LocalPosition: {x: 2.352, y: 0, z: 0.12}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: -0.076, y: 0.06, z: -1.525}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6356617586600731984}
@@ -22136,7 +22155,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &4592476334679520914
 GameObject:
   m_ObjectHideFlags: 0
