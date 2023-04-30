@@ -1,41 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.PlasticSCM.Editor.WebApi;
 using Unity.VisualScripting;
 using UnityEngine;
 
 
 public class ProduceWood : MonoBehaviour
 {
-    public GameObject Palette;
-    public GameObject Holz;
+    public GameObject Plank;
     public GameObject character_AxeOn;
-    public float radius = 5f;
-    public GameObject MainCharacter;
-    public GameObject BucketCharacter;
+    public float radius = 1f;
 
     // Start is called before the first frame update
     void Start()
     {
-        Holz.SetActive(false);
+        InvokeRepeating("Spawn", 3f, 3f);
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.tag == "Player" && gameObject != MainCharacter.activeInHierarchy && gameObject != BucketCharacter.activeInHierarchy)
-        {
-            float distance = Vector3.Distance(transform.position, other.transform.position);
-            if (distance <= radius)
-            {
-                InvokeRepeating("Spawn", 0f, 5f);
-            }
-        }
-    }
-    
     public void Spawn()
     {
-        
-        Holz.SetActive(true);
-        Instantiate(Holz, Holz.transform.position, Holz.transform.rotation);
-
+        float distance = Vector3.Distance(transform.position, character_AxeOn.transform.position);
+        if (gameObject == character_AxeOn.activeInHierarchy)
+        {
+            if (distance <= radius)
+            {
+                Plank.SetActive(true);
+                Plank.transform.position += new Vector3(0f, 0.1f, 0f);
+                Instantiate(Plank, Plank.transform.position, Plank.transform.rotation);
+            }
+        }
     }
 }

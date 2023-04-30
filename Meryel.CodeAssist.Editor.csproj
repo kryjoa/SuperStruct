@@ -56,28 +56,28 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\CodeAssist\Editor\FeedbackWindow.cs" />
-    <Compile Include="Assets\Plugins\CodeAssist\Editor\EditorCoroutines\EditorCoroutineUtility.cs" />
-    <Compile Include="Assets\Plugins\CodeAssist\Editor\UnityClassExtensions.cs" />
-    <Compile Include="Assets\Plugins\CodeAssist\Editor\TinyJson\JsonWriter.cs" />
+    <Compile Include="Assets\Plugins\CodeAssist\Editor\EditorCoroutines\EditorCoroutine.cs" />
     <Compile Include="Assets\Plugins\CodeAssist\Editor\TinyJson\JsonParser.cs" />
     <Compile Include="Assets\Plugins\CodeAssist\Editor\Logger\MemorySink.cs" />
-    <Compile Include="Assets\Plugins\CodeAssist\Editor\Monitor.cs" />
-    <Compile Include="Assets\Plugins\CodeAssist\Editor\EditorWindowFocusUtility.cs" />
-    <Compile Include="Assets\Plugins\CodeAssist\Editor\Logger\ELogger.cs" />
-    <Compile Include="Assets\Plugins\CodeAssist\Editor\NetMQPublisher.cs" />
-    <Compile Include="Assets\Plugins\CodeAssist\Editor\MySerializer.cs" />
     <Compile Include="Assets\Plugins\CodeAssist\Editor\NetMQInitializer.cs" />
-    <Compile Include="Assets\Plugins\CodeAssist\Editor\Logger\CommonTools.cs" />
-    <Compile Include="Assets\Plugins\CodeAssist\Editor\MainThreadDispatcher.cs" />
     <Compile Include="Assets\Plugins\CodeAssist\Editor\Assister.cs" />
-    <Compile Include="Assets\Plugins\CodeAssist\Editor\ScriptFinder.cs" />
-    <Compile Include="Assets\Plugins\CodeAssist\Editor\StatusWindow.cs" />
-    <Compile Include="Assets\Plugins\CodeAssist\Editor\EditorCoroutines\EditorWaitForSeconds.cs" />
-    <Compile Include="Assets\Plugins\CodeAssist\Editor\Logger\DomainHashEnricher.cs" />
     <Compile Include="Assets\Plugins\CodeAssist\Editor\Logger\UnitySink.cs" />
+    <Compile Include="Assets\Plugins\CodeAssist\Editor\Logger\ELogger.cs" />
+    <Compile Include="Assets\Plugins\CodeAssist\Editor\ScriptFinder.cs" />
+    <Compile Include="Assets\Plugins\CodeAssist\Editor\Logger\CommonTools.cs" />
+    <Compile Include="Assets\Plugins\CodeAssist\Editor\NetMQPublisher.cs" />
+    <Compile Include="Assets\Plugins\CodeAssist\Editor\MainThreadDispatcher.cs" />
+    <Compile Include="Assets\Plugins\CodeAssist\Editor\UnityClassExtensions.cs" />
+    <Compile Include="Assets\Plugins\CodeAssist\Editor\EditorCoroutines\EditorCoroutineUtility.cs" />
+    <Compile Include="Assets\Plugins\CodeAssist\Editor\FeedbackWindow.cs" />
+    <Compile Include="Assets\Plugins\CodeAssist\Editor\EditorCoroutines\EditorWaitForSeconds.cs" />
+    <Compile Include="Assets\Plugins\CodeAssist\Editor\TinyJson\JsonWriter.cs" />
+    <Compile Include="Assets\Plugins\CodeAssist\Editor\StatusWindow.cs" />
+    <Compile Include="Assets\Plugins\CodeAssist\Editor\EditorWindowFocusUtility.cs" />
     <Compile Include="Assets\Plugins\CodeAssist\Editor\EditorCoroutines\EditorWindowCoroutineExtension.cs" />
-    <Compile Include="Assets\Plugins\CodeAssist\Editor\EditorCoroutines\EditorCoroutine.cs" />
+    <Compile Include="Assets\Plugins\CodeAssist\Editor\Monitor.cs" />
+    <Compile Include="Assets\Plugins\CodeAssist\Editor\MySerializer.cs" />
+    <Compile Include="Assets\Plugins\CodeAssist\Editor\Logger\DomainHashEnricher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\CodeAssist\Editor\ExternalReferences\System.Runtime.CompilerServices.Unsafe.dll" />
@@ -352,14 +352,23 @@
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="AsyncIO">
+      <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\AsyncIO.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
     </Reference>
+    <Reference Include="Serilog">
+      <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\Serilog.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.PersistentFile">
+      <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\Serilog.Sinks.PersistentFile.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
@@ -375,15 +384,6 @@
     </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-    </Reference>
-    <Reference Include="AsyncIO">
-      <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\AsyncIO.dll</HintPath>
-    </Reference>
-    <Reference Include="Serilog">
-      <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\Serilog.dll</HintPath>
-    </Reference>
-    <Reference Include="Serilog.Sinks.PersistentFile">
-      <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\Serilog.Sinks.PersistentFile.dll</HintPath>
     </Reference>
     <Reference Include="UnityCodeAssistSynchronizerModel">
       <HintPath>Assets\Plugins\CodeAssist\Editor\ExternalReferences\Release\netstandard2.0\UnityCodeAssistSynchronizerModel.dll</HintPath>
