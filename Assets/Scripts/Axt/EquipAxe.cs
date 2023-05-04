@@ -6,9 +6,7 @@ public class EquipAxe : MonoBehaviour
 {
     public GameObject character_AxeOn;
     public GameObject mainCharacter;
-    public GameObject Plane;
     public GameObject Axe;
-    public Vector3 position;
 
     void Start()
     {

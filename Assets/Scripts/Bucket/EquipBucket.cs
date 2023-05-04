@@ -9,7 +9,6 @@ public class EquipBucket : MonoBehaviour
     public GameObject Plane;
     public GameObject Bucket;
     public Vector3 position;
-    public int counter;
 
     void Start()
     {
@@ -26,21 +25,12 @@ public class EquipBucket : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            if (Input.GetKey(KeyCode.E) && counter % 2 == 0)
+            if (Input.GetKey(KeyCode.E))
             {
                 Bucket.SetActive(false);
                 mainCharacter.SetActive(false);
                 character_AxeOn.SetActive(true);
-                counter++;
-            }
-
-            if (Input.GetKey(KeyCode.F))
-            {
-                Bucket.transform.position = character_AxeOn.transform.position;
-                Bucket.SetActive(true);
-                mainCharacter.SetActive(true);
-                character_AxeOn.SetActive(false);
-
+                
             }
         }
     }
