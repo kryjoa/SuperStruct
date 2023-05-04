@@ -4,21 +4,35 @@ using UnityEngine;
 
 public class DropAxe : MonoBehaviour
 {
-    public GameObject AxeOff;
+    public GameObject player;
+    public GameObject character_AxeOn;
+    public GameObject Axe;
 
     void Start()
     {
-        AxeOff.SetActive(true);
+
     }
 
-    private void OnTriggerStay(Collider other)
+    void Update()
     {
-        if (other.gameObject.tag == "Player")
+        test();
+    }
+
+
+
+    void test()
+    {
+        if (character_AxeOn.activeSelf)
         {
             if (Input.GetKey(KeyCode.F))
             {
-                this.gameObject.SetActive(true);
-                AxeOff.SetActive(false);
+                Vector3 position = character_AxeOn.transform.position;
+                player.transform.position = position;
+                player.SetActive(true);
+                character_AxeOn.SetActive(false);
+                Axe.SetActive(true);
+                Axe.transform.position = character_AxeOn.transform.position;
+                Axe.transform.rotation = character_AxeOn.transform.rotation;
             }
         }
     }

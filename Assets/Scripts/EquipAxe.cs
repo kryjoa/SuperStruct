@@ -9,7 +9,6 @@ public class EquipAxe : MonoBehaviour
     public GameObject Plane;
     public GameObject Axe;
     public Vector3 position;
-    public int counter;
 
     void Start()
     {
@@ -25,21 +24,11 @@ public class EquipAxe : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            if (Input.GetKey(KeyCode.E) && counter%2 == 0)
+            if (Input.GetKey(KeyCode.E))
             {
                 Axe.SetActive(false);
                 mainCharacter.SetActive(false);
                 character_AxeOn.SetActive(true);
-                counter++;
-            }
-
-            if (Input.GetKey(KeyCode.F))
-            {
-                Axe.transform.position = character_AxeOn.transform.position;
-                Axe.SetActive(true);
-                mainCharacter.SetActive(true);
-                character_AxeOn.SetActive(false);
-
             }
         }
     }
