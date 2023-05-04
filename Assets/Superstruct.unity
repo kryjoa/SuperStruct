@@ -17345,9 +17345,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753809034}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 1.4399049, z: 0}
-  m_LocalScale: {x: 32.708527, y: 32.708527, z: 32.708527}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 0, y: 1.4399049, z: -0.00000011920929}
+  m_LocalScale: {x: 32.708523, y: 32.708523, z: 32.708523}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 251108728}
@@ -21934,6 +21934,7 @@ GameObject:
   - component: {fileID: 2378041437052672292}
   - component: {fileID: 2387707135355389172}
   - component: {fileID: 2418607185684515420}
+  - component: {fileID: 2418607185684515421}
   m_Layer: 0
   m_Name: barrel_water_standing
   m_TagString: Untagged
@@ -21970,6 +21971,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 89852af4089794c4eac64300d5068b9c, type: 3}
+--- !u!114 &2418607185684515421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2409488192890294170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a36dfa50d1e688409129f7dc6eb7baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BucketCharacter: {fileID: 1477430808}
+  AxeONCharacter: {fileID: 1350441526}
+  radius: 1
 --- !u!4 &2488870937935871989
 Transform:
   m_ObjectHideFlags: 0

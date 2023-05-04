@@ -19,7 +19,6 @@ public class EquipAxe : MonoBehaviour
     {
         character_AxeOn.transform.position = mainCharacter.transform.position;
         character_AxeOn.transform.rotation = mainCharacter.transform.rotation;
-
     }
 
     private void OnTriggerStay(Collider other)

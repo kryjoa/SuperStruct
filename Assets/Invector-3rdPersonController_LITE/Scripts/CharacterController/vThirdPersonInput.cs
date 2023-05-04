@@ -44,7 +44,7 @@ namespace Invector.vCharacterController
 
         public virtual void OnAnimatorMove()
         {
-            cc.ControlAnimatorRootMotion(); // handle root motion animations 
+           cc.ControlAnimatorRootMotion(); // handle root motion animations 
         }
 
         #region Basic Locomotion Inputs
