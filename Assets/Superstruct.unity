@@ -17327,7 +17327,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 251108722}
   character_AxeOn: {fileID: 1350441526}
+  player_bucket: {fileID: 1477430808}
   Axe: {fileID: 6866778731745259209}
+  bucket: {fileID: 6896110924792613012}
 --- !u!1 &1350517981
 GameObject:
   m_ObjectHideFlags: 0
@@ -19184,8 +19186,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 251108722}
-  character_AxeOn: {fileID: 1477430808}
-  Axe: {fileID: 6896110924792613012}
+  character_AxeOn: {fileID: 1350441526}
+  player_bucket: {fileID: 1477430808}
+  Axe: {fileID: 6866778731745259209}
+  bucket: {fileID: 6896110924792613012}
 --- !u!1 &1478486965
 GameObject:
   m_ObjectHideFlags: 0
@@ -29082,6 +29086,11 @@ MonoBehaviour:
   character_AxeOn: {fileID: 1350441526}
   radius: 1
   EmptyGameObject: {fileID: 13021856}
+  duplicatedObject: {fileID: 0}
+  i: 0
+  Plankposition: {x: 0, y: 0, z: 0}
+  PlankCharacterOn: {fileID: 0}
+  mainCharacter: {fileID: 0}
 --- !u!65 &2145109728539364604
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29203,12 +29212,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2409488192890294170}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a36dfa50d1e688409129f7dc6eb7baf, type: 3}
+  m_Script: {fileID: 11500000, guid: 3cae88db2384d834c8c6bf412c0bc79a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WaterBucketCharacter: {fileID: 251108722}
   BucketCharacter: {fileID: 1477430808}
-  AxeONCharacter: {fileID: 1350441526}
-  radius: 1
+  BarrelWater: {fileID: 2409488192890294170}
+  check: 0
 --- !u!4 &2488870937935871989
 Transform:
   m_ObjectHideFlags: 0
@@ -29636,7 +29646,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character_AxeOn: {fileID: 1350441526}
   mainCharacter: {fileID: 251108722}
+  player_bucket: {fileID: 1477430808}
   Axe: {fileID: 6866778731745259209}
+  position: {x: 0, y: 0, z: 0}
+  bucket: {fileID: 6896110924792613012}
 --- !u!33 &6896110924789683348
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -29736,11 +29749,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2a442d654266e747b9a63a1d9aa10cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character_AxeOn: {fileID: 1477430808}
+  character_bucket: {fileID: 1477430808}
   mainCharacter: {fileID: 251108722}
   Plane: {fileID: 1372749477}
   Bucket: {fileID: 6896110924792613012}
+  Axt: {fileID: 6866778731745259209}
   position: {x: 0, y: 0, z: 0}
+  AxtDude: {fileID: 1350441526}
 --- !u!64 &6896110924792613014
 MeshCollider:
   m_ObjectHideFlags: 0

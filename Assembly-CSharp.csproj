@@ -57,21 +57,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Invector-3rdPersonController_LITE\Scripts\CharacterController\vThirdPersonMotor.cs" />
+    <Compile Include="Assets\Scripts\Plank\EquipPlank.cs" />
     <Compile Include="Assets\Scripts\Axt\EquipAxe.cs" />
+    <Compile Include="Assets\Scripts\WaterPickup.cs" />
     <Compile Include="Assets\Scripts\ProduceWood.cs" />
     <Compile Include="Assets\Scripts\Bucket\EquipBucket.cs" />
+    <Compile Include="Assets\Scripts\Plank\DropPlank.cs" />
     <Compile Include="Assets\Invector-3rdPersonController_LITE\3D Models\Others\HealthItem\vAnimateUV.cs" />
     <Compile Include="Assets\Invector-3rdPersonController_LITE\Scripts\Generic\Utils\vComment.cs" />
     <Compile Include="Assets\Invector-3rdPersonController_LITE\Scripts\CharacterController\vThirdPersonAnimator.cs" />
     <Compile Include="Assets\Invector-3rdPersonController_LITE\Scripts\CharacterController\vThirdPersonInput.cs" />
-    <Compile Include="Assets\Scripts\ProduceWater.cs" />
     <Compile Include="Assets\Invector-3rdPersonController_LITE\Scripts\Generic\Utils\vPickupItem.cs" />
     <Compile Include="Assets\Scripts\Axt\DropAxe.cs" />
     <Compile Include="Assets\Invector-3rdPersonController_LITE\Scripts\CharacterController\vThirdPersonController.cs" />
     <Compile Include="Assets\Invector-3rdPersonController_LITE\Scripts\Generic\Utils\vExtensions.cs" />
     <Compile Include="Assets\Invector-3rdPersonController_LITE\Scripts\Camera\vThirdPersonCamera.cs" />
-    <Compile Include="Assets\Scripts\Plank\EquipPlank.cs" />
-    <Compile Include="Assets\Scripts\Plank\DropPlank.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Invector-3rdPersonController_LITE\README_Basic.txt" />

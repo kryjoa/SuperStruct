@@ -359,8 +359,8 @@
 "Assets/Scripts/Bucket/EquipBucket.cs"
 "Assets/Scripts/Plank/DropPlank.cs"
 "Assets/Scripts/Plank/EquipPlank.cs"
-"Assets/Scripts/ProduceWater.cs"
 "Assets/Scripts/ProduceWood.cs"
+"Assets/Scripts/WaterPickup.cs"
 -langversion:9.0
 
 /deterministic

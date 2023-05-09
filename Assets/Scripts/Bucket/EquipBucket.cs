@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class EquipBucket : MonoBehaviour
 {
-    public GameObject character_AxeOn;
+    public GameObject character_bucket;
     public GameObject mainCharacter;
     public GameObject Plane;
     public GameObject Bucket;
+    public GameObject Axt;
     public Vector3 position;
+    public GameObject AxtDude;
 
     void Start()
     {
-        character_AxeOn.SetActive(false);
+        
     }
     void Update()
     {
-        character_AxeOn.transform.position = mainCharacter.transform.position;
-        character_AxeOn.transform.rotation = mainCharacter.transform.rotation;
+
 
     }
 
@@ -27,11 +28,32 @@ public class EquipBucket : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.E))
             {
-                Bucket.SetActive(false);
+                if (mainCharacter.activeSelf)
+                {
+                    character_bucket.transform.position = mainCharacter.transform.position;
+                    character_bucket.transform.rotation = mainCharacter.transform.rotation;
+                }
+                else if (AxtDude.activeSelf)
+                {
+                    character_bucket.transform.position = AxtDude.transform.position;
+                    character_bucket.transform.rotation = AxtDude.transform.rotation;
+
+                    Vector3 position = character_bucket.transform.position;
+                    position.z = position.z + 1f;
+                    Axt.transform.position = position;
+                    Axt.SetActive(true);
+                }
+
+
                 mainCharacter.SetActive(false);
-                character_AxeOn.SetActive(true);
+                AxtDude.SetActive(false);
+                Bucket.SetActive(false);
+                character_bucket.SetActive(true);
                 
+
+
             }
         }
     }
+
 }

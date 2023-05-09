@@ -20,11 +20,12 @@ public class EquipPlank : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        GameObject clonedPlank = Instantiate(Plank, Plank.transform.position, Plank.transform.rotation);
         if (other.gameObject.tag == "Player")
         {
             if (Input.GetKey(KeyCode.E))
             {
-                Plank.SetActive(false);
+                clonedPlank.SetActive(false);
                 mainCharacter.SetActive(false);
                 PlankCharacterOn.SetActive(true);
             }
