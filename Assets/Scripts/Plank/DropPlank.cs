@@ -6,7 +6,7 @@ public class DropPlank : MonoBehaviour
 {
     public GameObject MainCharacter;
     public GameObject PlankCharacterOn;
-    public GameObject Plank;
+    public GameObject Planks; 
 
     void Start()
     {
@@ -27,12 +27,15 @@ public class DropPlank : MonoBehaviour
             if (Input.GetKey(KeyCode.F))
             {
                 Vector3 position = PlankCharacterOn.transform.position;
+                Quaternion rotation = PlankCharacterOn.transform.rotation;
                 MainCharacter.transform.position = position;
-                MainCharacter.SetActive(true);
+                MainCharacter.transform.rotation = rotation;
                 PlankCharacterOn.SetActive(false);
-                Plank.SetActive(true);
-                Plank.transform.position = PlankCharacterOn.transform.position;
-                Plank.transform.rotation = PlankCharacterOn.transform.rotation;
+                MainCharacter.SetActive(true);
+
+                Planks.SetActive(true);
+                Planks.transform.position = PlankCharacterOn.transform.position;
+                
             }
         }
     }

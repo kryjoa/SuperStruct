@@ -5,8 +5,8 @@ using UnityEngine;
 public class EquipPlank : MonoBehaviour
 {
     public GameObject PlankCharacterOn;
-    public GameObject mainCharacter;
-    public GameObject Plank;
+    public GameObject MainCharacter;
+    public GameObject Planks;
 
     void Start()
     {
@@ -14,20 +14,25 @@ public class EquipPlank : MonoBehaviour
     }
     void Update()
     {
-        PlankCharacterOn.transform.position = mainCharacter.transform.position;
-        PlankCharacterOn.transform.rotation = mainCharacter.transform.rotation;
+        if (MainCharacter.activeSelf)
+        {
+            PlankCharacterOn.transform.position = MainCharacter.transform.position;
+            PlankCharacterOn.transform.rotation = MainCharacter.transform.rotation;
+        }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        GameObject clonedPlank = Instantiate(Plank, Plank.transform.position, Plank.transform.rotation);
         if (other.gameObject.tag == "Player")
         {
             if (Input.GetKey(KeyCode.E))
             {
-                clonedPlank.SetActive(false);
-                mainCharacter.SetActive(false);
+                
+                MainCharacter.SetActive(false);
                 PlankCharacterOn.SetActive(true);
+                Planks.SetActive(false);
+
+
             }
         }
     }

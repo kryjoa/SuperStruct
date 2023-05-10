@@ -17,6 +17,15 @@ public class ProduceWood : MonoBehaviour
     public GameObject PlankCharacterOn;
     public GameObject mainCharacter;
 
+
+    public GameObject Planks;
+
+    public GameObject PlankTeil1;
+    public GameObject PlankTeil2;
+    public GameObject PlankTeil3;
+
+    public GameObject Pallet;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,8 +34,11 @@ public class ProduceWood : MonoBehaviour
 
     void Update()
     {
-        PlankCharacterOn.transform.position = mainCharacter.transform.position;
-        PlankCharacterOn.transform.rotation = mainCharacter.transform.rotation;
+        if (mainCharacter.activeSelf)
+        {
+            PlankCharacterOn.transform.position = mainCharacter.transform.position;
+            PlankCharacterOn.transform.rotation = mainCharacter.transform.rotation;
+        }
     }
     private void OnTriggerStay(Collider other)
     {
@@ -46,11 +58,12 @@ public class ProduceWood : MonoBehaviour
         float distance = Vector3.Distance(transform.position, character_AxeOn.transform.position);
         if (gameObject == character_AxeOn.activeInHierarchy)
         {
-            if (distance <= radius)
+            if (distance <= radius  && Pallet.activeSelf)
             {
                 //Plank.transform.position = EmptyGameObject.transform.position;
 
-                GameObject clonedPlank = Instantiate(Plank, Plank.transform.position, Plank.transform.rotation); 
+                GameObject clonedPlank = Instantiate(Plank, Plank.transform.position, Plank.transform.rotation);
+                clonedPlank.transform.parent = Planks.transform;
                 clonedPlank.SetActive(true);
                 Plank.transform.position += new Vector3(0f, 0.1f, 0f);
 
@@ -58,6 +71,23 @@ public class ProduceWood : MonoBehaviour
 
 
                 clonedPlank.name = Plank.name + " (" + i + ")";
+                if(i == 1)
+                {
+                    PlankTeil1.SetActive(false);
+                }
+                else if (i == 2)
+                {
+                    PlankTeil2.SetActive(false);
+                }
+                else if (i == 3)
+                {
+                    PlankTeil3.SetActive(false);
+                }
+                
+                else if (i == 4)
+                {
+                    Pallet.SetActive(false);
+                }
                 i++;
             }
         }
