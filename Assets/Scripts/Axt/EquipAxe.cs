@@ -1,4 +1,4 @@
-    using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +10,8 @@ public class EquipAxe : MonoBehaviour
     public GameObject Axe;
     public Vector3 position;
     public GameObject bucket;
+    public GameObject plankcaracter;
+    public GameObject planks;
 
     void Start()
     {
@@ -42,9 +44,22 @@ public class EquipAxe : MonoBehaviour
                     bucket.SetActive(true);
                 }
 
+                else if (plankcaracter.activeSelf)
+                {
+                    character_AxeOn.transform.position = plankcaracter.transform.position;
+                    character_AxeOn.transform.rotation = plankcaracter.transform.rotation;
+                    Vector3 position = character_AxeOn.transform.position;
+                    position.z = position.z + 1f;
+                    planks.transform.position = position;
+                    planks.SetActive(true);
+                }
+
+
                 mainCharacter.SetActive(false);
                 player_bucket.SetActive(false);
+                plankcaracter.SetActive(false);
                 character_AxeOn.SetActive(true);
+
 
                 Axe.SetActive(false);
             }

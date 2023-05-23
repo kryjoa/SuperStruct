@@ -1,0 +1,794 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.24f1 (cf10dcf7010d) revision 13570268'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'de' Physical Memory: 15789 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.24f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/Johannes/Documents/GitHub/SuperStruct
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+57592
+Successfully changed project path to: C:/Users/Johannes/Documents/GitHub/SuperStruct
+C:/Users/Johannes/Documents/GitHub/SuperStruct
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [5228] Host "[IP] 192.168.112.1 [Port] 0 [Flags] 2 [Guid] 1619146938 [EditorId] 1619146938 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3ELO38M) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [5228] Host "[IP] 192.168.112.1 [Port] 0 [Flags] 2 [Guid] 1619146938 [EditorId] 1619146938 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3ELO38M) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 80.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Johannes/Documents/GitHub/SuperStruct/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
+    Vendor:   NVIDIA
+    VRAM:     5968 MB
+    Driver:   31.0.15.3179
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56264
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007514 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 78.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.759 seconds
+Domain Reload Profiling:
+	ReloadAssembly (760ms)
+		BeginReloadAssembly (104ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (533ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (124ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (318ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (79ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (172ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009749 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Johannes\Documents\GitHub\SuperStruct\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Johannes\Documents\GitHub\SuperStruct\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.304 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1305ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (1054ms)
+			LoadAssemblies (100ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (310ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (518ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (116ms)
+				ProcessInitializeOnLoadAttributes (356ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3105 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (56.4 KB). Loaded Objects now: 3560.
+Memory consumption went from 110.3 MB to 110.3 MB.
+Total: 3.380500 ms (FindLiveObjects: 0.318600 ms CreateObjectMapping: 0.096600 ms MarkObjects: 2.844300 ms  DeleteObjects: 0.120000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 64180.164156 seconds.
+  path: Assets/Items/Objects/Weapons/Pallet/Prefabs/Pallet_02.prefab
+  artifactKey: Guid(a023028c5285ccf44a3656864cbfdd86) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Objects/Weapons/Pallet/Prefabs/Pallet_02.prefab using Guid(a023028c5285ccf44a3656864cbfdd86) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f2164568ce019104d1d5f01c0372cc2c') in 0.130789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/Assembled Pieces/Benches/Bench_v003.prefab
+  artifactKey: Guid(a3aa748f61f9f034d93e29296c4b1ac8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/Assembled Pieces/Benches/Bench_v003.prefab using Guid(a3aa748f61f9f034d93e29296c4b1ac8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '05d0342fc4dd08607d6451a6d0d0d320') in 0.019039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/Assembled Pieces/Benches/Bench_v004.prefab
+  artifactKey: Guid(e23669dca8fc1e74f9e5e7288cf5e234) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/Assembled Pieces/Benches/Bench_v004.prefab using Guid(e23669dca8fc1e74f9e5e7288cf5e234) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0bb280a45087890537e5ea2a3da28ab4') in 0.019859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Invector-3rdPersonController_LITE/3D Models/Others/NewAssets/jumpOver.prefab
+  artifactKey: Guid(bf04e4da3dc9cf44abb84704b3405fab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Invector-3rdPersonController_LITE/3D Models/Others/NewAssets/jumpOver.prefab using Guid(bf04e4da3dc9cf44abb84704b3405fab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '01a27419b0a4b4a4ab007a93c3c5f5dc') in 0.023777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Textures/gras.png
+  artifactKey: Guid(aa0e3b0078b1f974abf388813d4174a5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Textures/gras.png using Guid(aa0e3b0078b1f974abf388813d4174a5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '03f38d2a63269d3ce65f46fe948e25cb') in 0.088961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Miscellaneous/woodRounded_v002e.prefab
+  artifactKey: Guid(3fb7ba3d0089c37429185ad5f24d3646) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Miscellaneous/woodRounded_v002e.prefab using Guid(3fb7ba3d0089c37429185ad5f24d3646) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b5e553f65028bf496dfea7eb05d03535') in 0.020095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/Assembled Pieces/SignPosts/SignPost_v002.prefab
+  artifactKey: Guid(8d9532dc02a26384aa962cfc1ac638f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/Assembled Pieces/SignPosts/SignPost_v002.prefab using Guid(8d9532dc02a26384aa962cfc1ac638f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8d8caabaf3d7a031fd8d20944f853263') in 0.023690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/Assembled Pieces/Shelters/Shelter_v002.prefab
+  artifactKey: Guid(a1fd755120d9506439f8437092f88653) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/Assembled Pieces/Shelters/Shelter_v002.prefab using Guid(a1fd755120d9506439f8437092f88653) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a7d566cdd76747ddc46d1bf8504a1c6f') in 0.019494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/Assembled Pieces/Stairs/Stairs_v002.prefab
+  artifactKey: Guid(9e7bd1dd45f7d14459da9181bb6ed23e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/Assembled Pieces/Stairs/Stairs_v002.prefab using Guid(9e7bd1dd45f7d14459da9181bb6ed23e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '19bf4c1720dca7ac8e0b72cdccd54e73') in 0.017704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/Assembled Pieces/Stairs/Stairs_v003.prefab
+  artifactKey: Guid(4f99d62b5b3df6c4d91ffe6e55806e1b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/Assembled Pieces/Stairs/Stairs_v003.prefab using Guid(4f99d62b5b3df6c4d91ffe6e55806e1b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f7753777a691db5f6c2918013be87000') in 0.022533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/Assembled Pieces/Fences/BasicFence_v003.prefab
+  artifactKey: Guid(83102ca9bc3319f4c9d063b010410fcf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/Assembled Pieces/Fences/BasicFence_v003.prefab using Guid(83102ca9bc3319f4c9d063b010410fcf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e8294de8ec4462418490cde159a239cc') in 0.018532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Serilog.Sinks.PersistentFile.dll
+  artifactKey: Guid(8648addeaeb365245896213d461ad956) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Serilog.Sinks.PersistentFile.dll using Guid(8648addeaeb365245896213d461ad956) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '08db64e92a8f208814b4690beb34aff8') in 0.019725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Invector-3rdPersonController_LITE/Resources/LightBox.png
+  artifactKey: Guid(494fe6d88cfabef49b7578a4c0be1e39) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Invector-3rdPersonController_LITE/Resources/LightBox.png using Guid(494fe6d88cfabef49b7578a4c0be1e39) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '64d7ac7467fa73e4bf9b946c7fec1a18') in 0.030317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Invector-3rdPersonController_LITE/3D Models/Others/NewAssets/climbUp.prefab
+  artifactKey: Guid(48f0c406a6058ef4096de43251b4dc26) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Invector-3rdPersonController_LITE/3D Models/Others/NewAssets/climbUp.prefab using Guid(48f0c406a6058ef4096de43251b4dc26) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0191a259ae10557b1fcba87821110d22') in 0.020283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Animations/Abbauer.controller
+  artifactKey: Guid(df9266eeb2e456d4db83a861ee8354e8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/Abbauer.controller using Guid(df9266eeb2e456d4db83a861ee8354e8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '02881e28cfabda3ff412e4b02246f7fe') in 0.015017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/FeedbackWindow.cs
+  artifactKey: Guid(dd9256aa75c891e44b2103fde2b2c3fd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/CodeAssist/Editor/FeedbackWindow.cs using Guid(dd9256aa75c891e44b2103fde2b2c3fd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e501e211504e8307c646eef7d17fac8d') in 0.020596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Invector-3rdPersonController_LITE/Resources/Wall-nm.png
+  artifactKey: Guid(64994417190443b499dde34cd05b52bd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Invector-3rdPersonController_LITE/Resources/Wall-nm.png using Guid(64994417190443b499dde34cd05b52bd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '671f32a11d07a9e2601fc361cf8b2929') in 0.028573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Invector-3rdPersonController_LITE/3D Models/Others/NewAssets/piece.prefab
+  artifactKey: Guid(782d52d115c7ce84ab933bf328e854b8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Invector-3rdPersonController_LITE/3D Models/Others/NewAssets/piece.prefab using Guid(782d52d115c7ce84ab933bf328e854b8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '180ff9ad1ba5790861b0031c4de9fffe') in 0.019724 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/System.Runtime.CompilerServices.Unsafe.dll
+  artifactKey: Guid(00e19c49af8d57c4ebb6b1f47f1949ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/System.Runtime.CompilerServices.Unsafe.dll using Guid(00e19c49af8d57c4ebb6b1f47f1949ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b155d9a3eed87489b604f347399b77e0') in 0.014079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Invector-3rdPersonController_LITE/Scripts/Camera/Editor/vThirdPersonCameraEditor.cs
+  artifactKey: Guid(86f967fe0faf67840993d0f39fcec5a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Invector-3rdPersonController_LITE/Scripts/Camera/Editor/vThirdPersonCameraEditor.cs using Guid(86f967fe0faf67840993d0f39fcec5a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0a898f8b0b4c15cfc323197f355b889f') in 0.011652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/Poison_v.mat
+  artifactKey: Guid(84c7db30b44eddf448ebdbf36007e974) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/Poison_v.mat using Guid(84c7db30b44eddf448ebdbf36007e974) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '671b6da428de0a89881eec6687cba36a') in 0.036977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/proto_green.mat
+  artifactKey: Guid(404138e866b65de4e978510443a8d0c2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Materials/proto_green.mat using Guid(404138e866b65de4e978510443a8d0c2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c9f5671b4f75dc5d8137b95c597b8189') in 0.024314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v004c.prefab
+  artifactKey: Guid(2b74658cff2ab22489d9dff86629bd38) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v004c.prefab using Guid(2b74658cff2ab22489d9dff86629bd38) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b0750db429caa57af76cff0eb5b0b567') in 0.019531 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v005a.prefab
+  artifactKey: Guid(eef09588d0e16354c9f41a34fdb739a6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v005a.prefab using Guid(eef09588d0e16354c9f41a34fdb739a6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e2c2acc977095109be66d4cf8ad60620') in 0.024429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v007b.prefab
+  artifactKey: Guid(eb060f53a73d52f4f9be0b5394aedff0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v007b.prefab using Guid(eb060f53a73d52f4f9be0b5394aedff0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4d2ee915048e2e5c2bf361a103616925') in 0.022152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Miscellaneous/woodWedge_v001d.prefab
+  artifactKey: Guid(3675d2eb086b2e6459583181c3547662) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Miscellaneous/woodWedge_v001d.prefab using Guid(3675d2eb086b2e6459583181c3547662) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6f4e374584ffddf638e50e66e15bc114') in 0.021680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v005d.prefab
+  artifactKey: Guid(8584764489e762349a5e97422d55a4d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v005d.prefab using Guid(8584764489e762349a5e97422d55a4d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a062a728a6582f0a0f2c12b72f63ace9') in 0.027433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v005g.prefab
+  artifactKey: Guid(5bb972013fec30a4a97288b39f59bc28) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v005g.prefab using Guid(5bb972013fec30a4a97288b39f59bc28) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e346d11ae42043983a5d989e4093bcf8') in 0.022976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v006a.prefab
+  artifactKey: Guid(441a9f97afe712449b4cd56280587e2f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v006a.prefab using Guid(441a9f97afe712449b4cd56280587e2f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3256e6b98d2954a025536f0175b6a758') in 0.027007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Invector-3rdPersonController_LITE/Scripts/CharacterController/vThirdPersonInput.cs
+  artifactKey: Guid(5deb9ff5611cb9d4596d397ac57ee8c7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Invector-3rdPersonController_LITE/Scripts/CharacterController/vThirdPersonInput.cs using Guid(5deb9ff5611cb9d4596d397ac57ee8c7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ac37c0775375f73697e2842458d9c538') in 0.017307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Textures/deadgrass.png
+  artifactKey: Guid(588c0f7d30e3e084c96a16f87d3c1ef4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Invector-3rdPersonController_LITE/3D Models/Textures/prototype_textures/Textures/deadgrass.png using Guid(588c0f7d30e3e084c96a16f87d3c1ef4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2245e41d389ec2f49bcbf560e9e6fa9a') in 0.030620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Items/Wood Set Pieces/Materials/Textures/wood_0000_specular.png
+  artifactKey: Guid(5d71cead79f085b4aaf947c24c6de626) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Materials/Textures/wood_0000_specular.png using Guid(5d71cead79f085b4aaf947c24c6de626) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a1bee982cc8bd47e2ec7a98b32190e60') in 0.021853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v005f.prefab
+  artifactKey: Guid(d8353f776ba035d42a0812b1e60e9d7b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v005f.prefab using Guid(d8353f776ba035d42a0812b1e60e9d7b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'adb8df3abe277eb8c359036ef5669738') in 0.029124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Plugins/CodeAssist/Editor
+  artifactKey: Guid(9dd902076fb3d1244bc1071b3a426eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/CodeAssist/Editor using Guid(9dd902076fb3d1244bc1071b3a426eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ed1b9b1cebd24fe3a47c62236d21e48') in 0.009161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v001c.prefab
+  artifactKey: Guid(9fea0188b60727b4c9b9f1039a1e380a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v001c.prefab using Guid(9fea0188b60727b4c9b9f1039a1e380a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '33b3cbb0ef428138267087d0c6341f86') in 0.022176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Miscellaneous/woodWedge_v001a.prefab
+  artifactKey: Guid(92623e744843a3c41aae1831fcca68c9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Miscellaneous/woodWedge_v001a.prefab using Guid(92623e744843a3c41aae1831fcca68c9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8e983c9a8ee7f1d45495c0bcac5a9b77') in 0.020721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v006f.prefab
+  artifactKey: Guid(8f530c580fc3e54438b5868be8eba1f6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v006f.prefab using Guid(8f530c580fc3e54438b5868be8eba1f6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7ad7d704d6a837d47984af7401af8976') in 0.020529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v003c.prefab
+  artifactKey: Guid(038d382b8fa8209459efdd71be2f621d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v003c.prefab using Guid(038d382b8fa8209459efdd71be2f621d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e77a36aa43f22ba5a05f270bfab9e296') in 0.024056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v004g.prefab
+  artifactKey: Guid(da40c18044565aa4fb4ce35c0c980346) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v004g.prefab using Guid(da40c18044565aa4fb4ce35c0c980346) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1438c2d385476136476123f1fe7f7e60') in 0.019982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v003e.prefab
+  artifactKey: Guid(2805557cf4b605141be63d65cb243b2b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v003e.prefab using Guid(2805557cf4b605141be63d65cb243b2b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2c0b778aefd71b1a40813a4eb2627f8a') in 0.022997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Miscellaneous/woodWedge_v001f.prefab
+  artifactKey: Guid(0c87b1a6a119c0645891e9361a27c9e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Miscellaneous/woodWedge_v001f.prefab using Guid(0c87b1a6a119c0645891e9361a27c9e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '21d9ade005c31d17bbf4c4b2af373f3d') in 0.021446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v003a.prefab
+  artifactKey: Guid(752eb0a3300333f4b895383a9077efc4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v003a.prefab using Guid(752eb0a3300333f4b895383a9077efc4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a8bdf961e2ffa5b658eff7ce3ea72a0c') in 0.020103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v001g.prefab
+  artifactKey: Guid(14bf3b599e60c704b8fa129a367a3fb0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v001g.prefab using Guid(14bf3b599e60c704b8fa129a367a3fb0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6d3bc0524f0f0ec09824b2d8121ac08c') in 0.021687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v003b.prefab
+  artifactKey: Guid(de46388734f6c5347a0c17c4d8aeec92) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v003b.prefab using Guid(de46388734f6c5347a0c17c4d8aeec92) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a7d6792712b9252b87ade2895a19f844') in 0.024775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v002g.prefab
+  artifactKey: Guid(8ad2e16694503164aa6429af5b641517) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v002g.prefab using Guid(8ad2e16694503164aa6429af5b641517) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '31358661c737c955e1cb04b4399f49f0') in 0.021177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v005f.prefab
+  artifactKey: Guid(fd90bd2775e24c24f83769666f407074) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v005f.prefab using Guid(fd90bd2775e24c24f83769666f407074) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2b6c01a4aa1f3458db56ca6137597451') in 0.023857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v003g.prefab
+  artifactKey: Guid(d9606da497398304d9054f871883fd48) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v003g.prefab using Guid(d9606da497398304d9054f871883fd48) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f7c2fd8af9df91ac9a015044361e9572') in 0.025619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v007g.prefab
+  artifactKey: Guid(2d079f1fc137b2c48bf9871e8682de6b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v007g.prefab using Guid(2d079f1fc137b2c48bf9871e8682de6b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '09f99712461ef9adc991e2a1d7339ff6') in 0.020979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v005a.prefab
+  artifactKey: Guid(9d9ba92003a1fd548811c21be30bd52e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v005a.prefab using Guid(9d9ba92003a1fd548811c21be30bd52e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '04f6be36431f30daed0cf9b8aee54b60') in 0.022453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v008e.prefab
+  artifactKey: Guid(58870d494515f99449b7d4f2539a8292) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v008e.prefab using Guid(58870d494515f99449b7d4f2539a8292) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1183b238a54052d36452a5081ed3b734') in 0.020420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v004b.prefab
+  artifactKey: Guid(b7d4bb4e9bac88c4da2ba0a1b05f1cce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v004b.prefab using Guid(b7d4bb4e9bac88c4da2ba0a1b05f1cce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '721f0a91954ee21568791078ba4bc3b7') in 0.021617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v006b.prefab
+  artifactKey: Guid(c4a7e67b6cc81aa478642caecb2b8cb0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v006b.prefab using Guid(c4a7e67b6cc81aa478642caecb2b8cb0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b14885077d25697b6cab1c92712ca9e6') in 0.022386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v007e.prefab
+  artifactKey: Guid(933ad1139b8d06a4cbaff4465b44482b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v007e.prefab using Guid(933ad1139b8d06a4cbaff4465b44482b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5b0cd229094c13b692a0c1f138d3fb62') in 0.022152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v001g.prefab
+  artifactKey: Guid(a1713d662404ce14280ac2e12fe58d2e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v001g.prefab using Guid(a1713d662404ce14280ac2e12fe58d2e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd47553ce0a127ca73276c2edabfde45a') in 0.021714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v008a.prefab
+  artifactKey: Guid(1444f4dbc78f0fc48b0527f0fb9880ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v008a.prefab using Guid(1444f4dbc78f0fc48b0527f0fb9880ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a09b3cb30e1a244555b72a9be02f1754') in 0.021360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v003f.prefab
+  artifactKey: Guid(de41ecee73a44e444af3c364eba71169) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v003f.prefab using Guid(de41ecee73a44e444af3c364eba71169) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '649e85dd8ffb1c0b3126bc4626934ce2') in 0.019931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v002a.prefab
+  artifactKey: Guid(aad1f102a87dce84482ff2453939e1dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v002a.prefab using Guid(aad1f102a87dce84482ff2453939e1dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ad03412dd33e8810b9e03e5dadfd5e9a') in 0.020952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v008b.prefab
+  artifactKey: Guid(bd84ad7bb6ad52d4c91f326d2e129bd7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v008b.prefab using Guid(bd84ad7bb6ad52d4c91f326d2e129bd7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e462dcd552232a4ec825ec2b99ac561f') in 0.020769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v003e.prefab
+  artifactKey: Guid(1c35b454296e0e141a26f5f1fa7db518) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v003e.prefab using Guid(1c35b454296e0e141a26f5f1fa7db518) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9603b7a889bfa77605a2aa055f8d8a06') in 0.019741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v008d.prefab
+  artifactKey: Guid(21b5370b9c919fb4b9943a3ff3d67416) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v008d.prefab using Guid(21b5370b9c919fb4b9943a3ff3d67416) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '76375ff8f381b7eab72732fd8b0364e1') in 0.022610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v003a.prefab
+  artifactKey: Guid(ca34a597c65bb8348ba0487e3f6fce6b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v003a.prefab using Guid(ca34a597c65bb8348ba0487e3f6fce6b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '214d6e592b07299f0ad50fb7f2415e48') in 0.020363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/Rubber.mat
+  artifactKey: Guid(33c350b6cd6102647be9afdfaec5b563) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/Rubber.mat using Guid(33c350b6cd6102647be9afdfaec5b563) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '684f558312d258878afb230ffb9c3a54') in 0.077414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Plugins/CodeAssist/Editor/ExternalReferences/Release/netstandard2.0/UnityCodeAssistSynchronizerModel.pdb
+  artifactKey: Guid(4273452519b20f4418af6223cd69f6cc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/CodeAssist/Editor/ExternalReferences/Release/netstandard2.0/UnityCodeAssistSynchronizerModel.pdb using Guid(4273452519b20f4418af6223cd69f6cc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '58c38cc96f9d781a3a04b9a8f49fe220') in 0.015405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Textures/Custom/Albedo_members.png
+  artifactKey: Guid(03fa212867eeda149bd1ad9a7c9e57ef) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Textures/Custom/Albedo_members.png using Guid(03fa212867eeda149bd1ad9a7c9e57ef) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ef5dd325eaf19c32a0c033d652fcf7ad') in 0.036370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v007d.prefab
+  artifactKey: Guid(1fc86f177e9189143932a3fdb3e1b96e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v007d.prefab using Guid(1fc86f177e9189143932a3fdb3e1b96e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0e5034b59c347ac45bd9a22e3cc33fce') in 0.020352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v006g.prefab
+  artifactKey: Guid(e940040995003bf428b634af31c58e09) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v006g.prefab using Guid(e940040995003bf428b634af31c58e09) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f214880644435239077738c93d6ea029') in 0.026629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v004g.prefab
+  artifactKey: Guid(f6080772d3c12af4cb94cb7c273274b7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v004g.prefab using Guid(f6080772d3c12af4cb94cb7c273274b7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd06054f53f46e7f20b4b7ff72915f172') in 0.021258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v005e.prefab
+  artifactKey: Guid(554c19113cc488e458640139d91965a1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v005e.prefab using Guid(554c19113cc488e458640139d91965a1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a195f5515090e365fee0a43f80201f6c') in 0.019294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Items/Objects/Weapons/Pallet/Textures/TexturesV02_Gloss/Pallet [Albedo].tga
+  artifactKey: Guid(acef126dbe2fe36469ffd213233f18e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Objects/Weapons/Pallet/Textures/TexturesV02_Gloss/Pallet [Albedo].tga using Guid(acef126dbe2fe36469ffd213233f18e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd98f02c5cd5146eccd9ca48411cd735d') in 0.029729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/Body.mat
+  artifactKey: Guid(2fccb76f588d4d749928713d38489484) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Invector-3rdPersonController_LITE/3D Models/Characters/Invector@V-Bot 2.0/Material/Custom/Body.mat using Guid(2fccb76f588d4d749928713d38489484) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '603e3bbbf91b9ae8ed560b239371787b') in 0.047964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v005d.prefab
+  artifactKey: Guid(38ff713e3cffda3449d27d8bad77727d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Posts/WoodRound_v005d.prefab using Guid(38ff713e3cffda3449d27d8bad77727d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f192f130d800df7a458bb1766ec49c50') in 0.023459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Items/Objects/Weapons/Pallet/Mesh/Materials/Pallet_Mat.mat
+  artifactKey: Guid(137e48994061f6148a08e7aadfd34332) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Objects/Weapons/Pallet/Mesh/Materials/Pallet_Mat.mat using Guid(137e48994061f6148a08e7aadfd34332) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b2de973796cd8a112ee560ef831bb024') in 0.020226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Items/Objects/Weapons/Pallet/Textures/TexturesV02_Gloss/Pallet [Specular].tga
+  artifactKey: Guid(8020d6ee2f1d0fd408f30f21d1a1fe41) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Objects/Weapons/Pallet/Textures/TexturesV02_Gloss/Pallet [Specular].tga using Guid(8020d6ee2f1d0fd408f30f21d1a1fe41) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b2a182da5a59da04c9d0aa4d1828ca2d') in 0.029401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v005e.prefab
+  artifactKey: Guid(b6ea467fc0c889e41a991e0791422036) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Pillars/woodPillar_v005e.prefab using Guid(b6ea467fc0c889e41a991e0791422036) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '798744c2bfc5cedf29ab9eecd28c6da0') in 0.021239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v002b.prefab
+  artifactKey: Guid(59488c582bc0f4e40ab40d67982a388a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Wood Set Pieces/Prefabs/BasicMeshes/Planks/woodPlank_v002b.prefab using Guid(59488c582bc0f4e40ab40d67982a388a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9c6f992749006a2e35200c3ff051b82b') in 0.020990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Invector-3rdPersonController_LITE/Resources/square.png
+  artifactKey: Guid(f981fdad814cbfb43969712c51317bae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Invector-3rdPersonController_LITE/Resources/square.png using Guid(f981fdad814cbfb43969712c51317bae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '256cdce9240192bff8ce94c2a2dd0b2c') in 0.030575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Invector-3rdPersonController_LITE/3D Models/Others/NewAssets/_stairs.prefab
+  artifactKey: Guid(e5e911e47916cfc439e4036756e48bf1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Invector-3rdPersonController_LITE/3D Models/Others/NewAssets/_stairs.prefab using Guid(e5e911e47916cfc439e4036756e48bf1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bdc33320909c57f60df6a2ca9458a46a') in 0.020196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Invector-3rdPersonController_LITE/Scripts/Generic/Utils/vExtensions.cs
+  artifactKey: Guid(7fc1693a704c9e145a47ee927f7b634b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Invector-3rdPersonController_LITE/Scripts/Generic/Utils/vExtensions.cs using Guid(7fc1693a704c9e145a47ee927f7b634b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '788ecc639340e8d169e5e87d607aeb73') in 0.011930 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Items/Objects/Weapons/Pallet/Mesh/LOD's/Pallet_04_LOD0.FBX
+  artifactKey: Guid(e0b2103424f3bc541a8bc0e6757d3018) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Items/Objects/Weapons/Pallet/Mesh/LOD's/Pallet_04_LOD0.FBX using Guid(e0b2103424f3bc541a8bc0e6757d3018) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '543fda0bcfdf450f90d39ce2f0be9714') in 0.075644 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009698 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Johannes\Documents\GitHub\SuperStruct\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Johannes\Documents\GitHub\SuperStruct\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.075 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1076ms)
+		BeginReloadAssembly (154ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (825ms)
+			LoadAssemblies (104ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (270ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (385ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (278ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.86 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3323 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (24.6 KB). Loaded Objects now: 3785.
+Memory consumption went from 117.0 MB to 116.9 MB.
+Total: 2.986300 ms (FindLiveObjects: 0.303300 ms CreateObjectMapping: 0.133900 ms MarkObjects: 2.507200 ms  DeleteObjects: 0.040500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3005.275842 seconds.
+  path: Assets/Pallet_01.prefab
+  artifactKey: Guid(e2c1a0741c061254f82648776085dd80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pallet_01.prefab using Guid(e2c1a0741c061254f82648776085dd80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05f59c1bca691c3afa0989ae152f4084') in 0.141535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1251.362411 seconds.
+  path: Assets/Cement_Bag/Cement_Bag.obj
+  artifactKey: Guid(e04d97b9a0857ad4d9634771a3e10311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cement_Bag/Cement_Bag.obj using Guid(e04d97b9a0857ad4d9634771a3e10311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a13266d057a9973260cd1eb631d18866') in 0.084704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Cement_Bag/Pallet.obj
+  artifactKey: Guid(d97715c1ef38be14197e2519e78668a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cement_Bag/Pallet.obj using Guid(d97715c1ef38be14197e2519e78668a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00ae4581d5e6aa661baf5a55ca0345e8') in 0.025329 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
