@@ -361,6 +361,7 @@
 "Assets/Scripts/Axt/DropAxe.cs"
 "Assets/Scripts/Axt/EquipAxe.cs"
 "Assets/Scripts/Bucket/EquipBucket.cs"
+"Assets/Scripts/elevatorController.cs"
 "Assets/Scripts/Plank/DropPlank.cs"
 "Assets/Scripts/Plank/EquipPlank.cs"
 "Assets/Scripts/ProduceWood.cs"

@@ -9,7 +9,7 @@ public class ProduceWood : MonoBehaviour
 {
     public GameObject Plank;
     public GameObject character_AxeOn;
-    public float radius = 1f;
+    public float radius = 3f;
     public GameObject EmptyGameObject;
     public GameObject duplicatedObject;
     public int i;
